@@ -6,8 +6,6 @@ def calculateAge(born):
     try:
         birthday = born.replace(year=today.year)
 
-
-
     except ValueError:
         birthday = born.replace(year=today.year,
                                 month=born.month + 1, day=1)
